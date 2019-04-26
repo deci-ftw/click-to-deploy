@@ -24,6 +24,7 @@ set -o errexit
 
 if [[ ! -n "$passdb" ]]; then
   echo 'Generating random database password.'
+  ls $HOME
   passdb=$(openssl rand -base64 12)
 fi
 
